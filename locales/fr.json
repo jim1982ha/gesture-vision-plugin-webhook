@@ -1,0 +1,15 @@
+{
+  "pluginWebhookName": "Webhook",
+  "pluginWebhookDescription": "Envoie des requêtes HTTP à une URL spécifiée.",
+  "actionTypeWebhook": "Webhook",
+  "webhookUrlLabel": "URL Webhook",
+  "webhookUrlPlaceholder": "https://votre.webhook.url/endpoint",
+  "webhookMethodLabel": "Méthode",
+  "webhookHeadersLabel": "Entêtes (JSON, Optionnel)",
+  "webhookHeadersPlaceholder": "{\"Authorization\": \"Bearer ...\"}",
+  "webhookHeadersHelp": "Entrez du JSON valide pour les entêtes personnalisées.",
+  "webhookBodyTemplateLabel": "Modèle Corps Requête (Optionnel)",
+  "webhookBodyTemplateHelp": "Variables : {{gestureName}}, {{confidence}}, {{timestamp}}. JSON supposé si Content-Type non défini.",
+  "invalidWebhookActionSettings": "Paramètres d'action Webhook invalides.",
+  "Method": "Méthode"
+}

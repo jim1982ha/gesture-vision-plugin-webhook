@@ -1,0 +1,17 @@
+{
+  "id": "webhook",
+  "nameKey": "pluginWebhookName",
+  "descriptionKey": "pluginWebhookDescription",
+  "version": "1.0.0",
+  "author": "GestureVision Team",
+  "icon": {
+    "type": "mdi",
+    "name": "mdi-webhook"
+  },
+  "capabilities": {
+    "hasGlobalSettings": false,
+    "providesActions": true
+  },
+  "backendEntry": "backend.plugin.js",
+  "frontendEntry": "frontend/index.js"
+}

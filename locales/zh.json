@@ -1,0 +1,15 @@
+{
+  "pluginWebhookName": "Webhook",
+  "pluginWebhookDescription": "向指定的 URL 发送 HTTP 请求。",
+  "actionTypeWebhook": "Webhook",
+  "webhookUrlLabel": "Webhook URL",
+  "webhookUrlPlaceholder": "https://your.webhook.url/endpoint",
+  "webhookMethodLabel": "方法 (Method)",
+  "webhookHeadersLabel": "请求头 (Headers, JSON, 可选)",
+  "webhookHeadersPlaceholder": "{\"Authorization\": \"Bearer ...\"}",
+  "webhookHeadersHelp": "输入有效的 JSON 作为自定义请求头。",
+  "webhookBodyTemplateLabel": "请求体模板 (Body Template, 可选)",
+  "webhookBodyTemplateHelp": "变量: {{gestureName}}, {{confidence}}, {{timestamp}}。若 Headers 中未设置 Content-Type，则假定为 JSON。",
+  "invalidWebhookActionSettings": "无效的 Webhook 动作设置",
+  "Method": "方法"
+}

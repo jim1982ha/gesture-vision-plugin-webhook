@@ -1,0 +1,15 @@
+{
+  "pluginWebhookName": "Webhook",
+  "pluginWebhookDescription": "Sends HTTP requests to a specified URL.",
+  "actionTypeWebhook": "Webhook",
+  "webhookUrlLabel": "Webhook URL",
+  "webhookUrlPlaceholder": "https://your.webhook.url/endpoint",
+  "webhookMethodLabel": "Method",
+  "webhookHeadersLabel": "Headers (JSON, Optional)",
+  "webhookHeadersPlaceholder": "{\"Authorization\": \"Bearer ...\"}",
+  "webhookHeadersHelp": "Enter valid JSON for custom headers.",
+  "webhookBodyTemplateLabel": "Body Template (Optional)",
+  "webhookBodyTemplateHelp": "Variables: {{gestureName}}, {{confidence}}, {{timestamp}}. Assumes JSON if Content-Type not set in Headers.",
+  "invalidWebhookActionSettings": "Invalid Webhook action settings",
+  "Method": "Method"
+}

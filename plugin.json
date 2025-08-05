@@ -1,8 +1,8 @@
 {
-  "id": "webhook",
+  "id": "gesture-vision-plugin-webhook",
   "nameKey": "pluginWebhookName",
   "descriptionKey": "pluginWebhookDescription",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "GestureVision Team",
   "icon": {
     "type": "mdi",

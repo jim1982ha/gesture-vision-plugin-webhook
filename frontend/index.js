@@ -2,7 +2,6 @@
 const webhookPluginFrontendModule = {
     manifest: { /* will be populated by loader */ },
     
-    // FIX: Convert the static array to a function that receives the context
     actionSettingsFields: (context) => {
         const { translate } = context.services;
         return [

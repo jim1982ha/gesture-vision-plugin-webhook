@@ -5,7 +5,7 @@ Sends HTTP requests to a specified URL.
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-repo/gesture-vision-app/main/path/to/icon.png" width="80" alt="Webhook Plugin Icon">
+  <img src="https://raw.githubusercontent.com/jim1982ha/gesture-vision/main/packages/frontend/public/icons/icon-72.webp" width="80" alt="Webhook Plugin Icon">
 </p>
 <h1 align="center">GestureVision - Webhook Plugin</h1>
 <p align="center">

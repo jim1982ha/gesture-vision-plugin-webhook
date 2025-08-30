@@ -1,9 +1,9 @@
 /* FILE: extensions/plugins/webhook/action-handler.webhook.ts */
-import { processActionTemplate } from '#shared/utils/index.js';
+import { processActionTemplate } from '#shared/index.js';
 import { createErrorResult, executeWithRetry } from '#backend/utils/action-helpers.js';
 import { type WebhookActionInstanceSettings } from './schemas.js';
 
-import type { ActionDetails, ActionResult } from '#shared/types/index.js';
+import type { ActionDetails, ActionResult } from '#shared/index.js';
 import type { ActionHandler } from '#backend/types/index.js';
 
 export class WebhookActionHandler implements ActionHandler {

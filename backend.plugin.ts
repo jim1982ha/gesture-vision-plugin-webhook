@@ -3,7 +3,7 @@ import { BaseBackendPlugin } from '#backend/plugins/base-backend.plugin.js';
 import { WebhookActionHandler } from './action-handler.webhook.js';
 import { WebhookActionSettingsSchema } from './schemas.js';
 import manifest from './plugin.json' with { type: 'json' };
-import type { PluginManifest } from "#shared/types/index.js";
+import type { PluginManifest } from "#shared/index.js";
 
 class WebhookBackendPlugin extends BaseBackendPlugin {
   constructor() {

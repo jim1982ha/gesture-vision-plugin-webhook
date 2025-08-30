@@ -2,8 +2,7 @@
 const webhookPluginFrontendModule = {
     manifest: { /* will be populated by loader */ },
     
-    actionSettingsFields: (context) => {
-        const { translate } = context.services;
+    actionSettingsFields: () => {
         return [
             { id: 'webhookUrl', type: 'url', labelKey: 'webhookUrlLabel', placeholderKey: 'webhookUrlPlaceholder', required: true },
             {
@@ -17,9 +16,16 @@ const webhookPluginFrontendModule = {
 
     getActionDisplayDetails: (settings, context) => {
         const { translate } = context.services;
-        if (!settings?.webhookUrl) return [{ icon: 'error_outline', value: translate("invalidWebhookActionSettings") }];
+        const { GESTURE_CATEGORY_ICONS } = context.shared.constants;
+
+        if (!settings?.webhookUrl) return [{ icon: GESTURE_CATEGORY_ICONS.UI_ERROR.iconName, value: translate("invalidWebhookActionSettings") }];
+        
         const method = settings.webhookMethod || "POST";
-        return [{ icon: 'webhook', value: settings.webhookUrl }, { icon: 'http', value: `${translate("Method")}: ${method}` }];
+        
+        return [
+            { icon: GESTURE_CATEGORY_ICONS.UI_WEBHOOK.iconName, value: settings.webhookUrl }, 
+            { icon: GESTURE_CATEGORY_ICONS.UI_HTTP.iconName, value: `${translate("Method")}: ${method}` }
+        ];
     },
 };
 export default webhookPluginFrontendModule;

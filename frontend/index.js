@@ -1,4 +1,10 @@
 /* FILE: extensions/plugins/webhook/frontend/index.js */
+
+// Ensure the global registry exists
+if (!window.GestureVisionPlugins) {
+  window.GestureVisionPlugins = {};
+}
+
 const webhookPluginFrontendModule = {
     manifest: { /* will be populated by loader */ },
     
@@ -28,4 +34,8 @@ const webhookPluginFrontendModule = {
         ];
     },
 };
+
+// Register the module with the global registry
+window.GestureVisionPlugins['gesture-vision-plugin-webhook'] = webhookPluginFrontendModule;
+
 export default webhookPluginFrontendModule;
